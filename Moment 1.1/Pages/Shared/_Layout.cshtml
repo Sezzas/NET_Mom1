@@ -11,47 +11,50 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Moment 1.1</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- CSS -->
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Moment_1._1.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">Moment 1.1</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Start</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Razor">Razor</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/About">Om sidan</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <p>Dagens datum är: @today</p>
+
+    <!-- Container -->
+    <div id="container">
+
+        <!-- Header -->
+        <header>
+
+        <!-- Logga -->
+        <a href="https://timshaircut.se/produkt/safety-razor-98r/"><img src="./razor.png" alt="logga"></a>
+
+        <!-- Dagens datum -->
+        <p class="date-text">Dagens datum är: @today</p>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+
+    <!-- Container -->
+    <div id="main-content">
+
+        <!-- Meny -->
+        <aside>
+            <nav>
+                <a asp-page="/Index">Start</a>
+                <a asp-page="/Razor">Razor</a>
+                <a asp-page="/About">Om sidan</a>
+            </nav>
+        </aside>
+
+        <!-- Huvudinnehåll -->
+        <main role="main">
             @RenderBody()
         </main>
     </div>
 
+    <!-- Footer -->
     <footer class="border-top footer text-muted">
+        <p>Av Student Ebba Hansson - Kontakta mig via e-post: ebba.hansson97@hotmail.com</p>
     </footer>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+
+    <!-- JS file -->
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)

@@ -1,22 +1,76 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
 
 body {
-  margin-bottom: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #3C4048;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    padding: 2em;
+    background-color: #EAEAEA;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+
+header img {
+    max-width: 150px;
+}
+
+#main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+aside {
+    min-width: 200px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav a {
+    background-color: #3C4048;
+    color: #00ABB3;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #00ABB3;
+    color: #EAEAEA;
+}
+
+main {
+    flex-grow: 2;
+}
+
+footer {
+    text-align: center;
+    padding-top: 2em;
+    border-top: 1px solid #3C4048;
+    margin-top: 3em;
+}
+
+.date-text {
+    font-size: 0.8em;
+}
+
+
+@media (min-width: 768px) {
+
 }
