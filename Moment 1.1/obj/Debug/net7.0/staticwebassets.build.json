@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LsAL5DF/7gaVZKV5IbZ1Ihlu0bMytZU+FxXOUUIrC0I=",
+  "Hash": "ylqMvz0zu1whXFDfFaN7rDDKgEMhY+Uw9ephMU+cnqA=",
   "Source": "Moment 1.1",
   "BasePath": "_content/Moment 1.1",
   "Mode": "Default",
@@ -1069,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\ebbah\\Dropbox\\WEBBUTVECKLING-PROGRAMMET\\Kod\\Webbutveckling med .NET\\NET_Mom1\\Moment 1.1\\wwwroot\\razor.png",
+      "SourceId": "Moment 1.1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ebbah\\Dropbox\\WEBBUTVECKLING-PROGRAMMET\\Kod\\Webbutveckling med .NET\\NET_Mom1\\Moment 1.1\\wwwroot\\",
+      "BasePath": "_content/Moment 1.1",
+      "RelativePath": "razor.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\razor.png"
     }
   ]
 }
