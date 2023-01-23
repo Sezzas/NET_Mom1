@@ -5,4 +5,22 @@
 
 "use strict";
 
-console.log("Hello World!");
+// -- Variabler
+let btnEl = document.getElementById("click-btn");
+let number = 0;
+
+
+// -- Eventlyssnare
+btnEl.addEventListener("click", addCount);
+
+
+
+// -- Funktioner
+
+// Räkna
+function addCount() {
+    
+    number++;
+    btnEl.innerHTML = number;
+
+}
