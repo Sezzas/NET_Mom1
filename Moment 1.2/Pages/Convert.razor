@@ -1,5 +1,61 @@
 @page "/convert"
 
+<PageTitle>Konvertering</PageTitle>
+
 <h2>Konvertering</h2>
 
 <p>På denna sida kan du konvertera meter till "feet" och km/h till miles per hour.</p>
+
+<!-- Konvertera meter till feet -->
+<h3>Meter till feet</h3>
+<p>Skriv in antal meter i fältet nedan.</p>
+
+<input type="number" name="meter" id="meter" @bind="meter"> m <br />
+<button class="click-btn" @onclick="calculateFeet">Konvertera till feet</button> <br /><br /> <!-- Konverterar till feet vid klick -->
+
+<!-- Skriver ut resultat -->
+@if(feetMsg != null) {
+    @feetMsg
+}
+
+<!-- Konvertera km/h till mph -->
+<h3>Km/h till miles per hour</h3>
+<p>Skriv in kilometer per timma i fältet nedan.</p>
+
+<input type="number" name="kmh" id="kmh" @bind="kmh"> km/h <br />
+<button class="click-btn" @onclick="calculateMph">Konvertera till miles per hour</button> <br /><br /> <!-- Konverterar till mph vid klick -->
+
+<!-- Skriver ut resultat -->
+@if(mphMsg != null) {
+    @mphMsg
+}
+
+
+@code {
+
+    // Variabler
+    private double meter;
+    private double feet;
+    private double kmh;
+    private double mph;
+    private string feetMsg;
+    private string mphMsg;
+
+    // Konvertera till feet
+    private void calculateFeet() {
+
+        feet = Math.Round((meter * 3.28084), 2);
+
+        feetMsg = meter + " meter är " + feet + " feet";
+
+    }
+
+    // Konvertera till mph
+    private void calculateMph() {
+
+        mph = (int)(kmh * 0.621371192);
+
+        mphMsg = kmh + " km/h är " + mph + " mph";
+
+    }
+}

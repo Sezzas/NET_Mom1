@@ -74,20 +74,24 @@ footer {
     font-size: 0.8em;
 }
 
-#click-btn {
+.click-btn {
     background-color: #B2B2B2;
     border: none;
     padding: 0.5em;
     color: #3C4048;
     font-weight: bold;
     font-family: 'Calibri', sans-serif;
-    font-size: 1.1em;
     min-width: 100px;
+    margin-top: 1em;
 }
 
-#click-btn:hover {
+.click-btn:hover {
     background-color: #00ABB3;
     color: #31343a;
+}
+
+input[type=number] {
+    padding: 0.5em;
 }
 
 /* Platta & mobil */
