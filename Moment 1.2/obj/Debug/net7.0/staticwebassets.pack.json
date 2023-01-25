@@ -33,12 +33,12 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\ebbah\\Dropbox\\WEBBUTVECKLING-PROGRAMMET\\Kod\\Webbutveckling med .NET\\NET_Mom1\\Moment 1.2\\wwwroot\\sample-data\\games.json",
-      "PackagePath": "staticwebassets\\sample-data\\games.json"
+      "Id": "C:\\Users\\ebbah\\Dropbox\\WEBBUTVECKLING-PROGRAMMET\\Kod\\Webbutveckling med .NET\\NET_Mom1\\Moment 1.2\\wwwroot\\me.jpg",
+      "PackagePath": "staticwebassets\\me.jpg"
     },
     {
-      "Id": "C:\\Users\\ebbah\\Dropbox\\WEBBUTVECKLING-PROGRAMMET\\Kod\\Webbutveckling med .NET\\NET_Mom1\\Moment 1.2\\wwwroot\\sample-data\\weather.json",
-      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+      "Id": "C:\\Users\\ebbah\\Dropbox\\WEBBUTVECKLING-PROGRAMMET\\Kod\\Webbutveckling med .NET\\NET_Mom1\\Moment 1.2\\wwwroot\\sample-data\\games.json",
+      "PackagePath": "staticwebassets\\sample-data\\games.json"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Moment 1.2.Microsoft.AspNetCore.StaticWebAssets.props",

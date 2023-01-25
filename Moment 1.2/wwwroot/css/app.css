@@ -27,6 +27,10 @@ header img {
     gap: 2em;
 }
 
+#main-content img {
+    max-width: 300px;
+}
+
 h1 {
     margin-top: 0;
 }
