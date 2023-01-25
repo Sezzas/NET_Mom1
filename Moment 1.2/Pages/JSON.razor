@@ -1,3 +1,69 @@
 @page "/json"
+@inject HttpClient Http
 
 <h2>JSON</h2>
+
+<p>Här hämtas data från en JSON-fil som skrivs ut på sidan. Detta är en tabell innehållande lite olika spel.</p>
+
+<!-- Kontrollera om JSON-fil är tom -->
+@if(games == null) {
+
+    <p><em>Inga spel att ladda..</em></p>
+
+} else {
+
+    // Tabell med spel
+    <table>
+
+        <thead>
+            <tr>
+                <th>Titel</th>
+                <th>Genre</th>
+                <th>Plattformar</th>
+                <th>Pris</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            @foreach(var game in games) {
+                // Loopa genom spel
+
+                <tr>
+                    <td>@game.Title</td>
+                    <td>@game.Genre</td>
+                    <td>@game.Platforms</td>
+                    <td>@game.Price kr</td>
+                </tr>
+
+            }
+        
+        </tbody>
+
+    </table>
+
+}
+
+@code {
+    private Games[]? games;
+
+    // Get JSON data
+    protected override async Task OnInitializedAsync()
+    {
+        games = await Http.GetFromJsonAsync<Games[]>("sample-data/games.json");
+    }
+
+    // Fields in objects, get & set
+    public class Games {
+
+        public string Title { get; set; }
+
+        public string Genre { get; set; }
+
+        public string Platforms { get; set; }
+
+        public int Price { get; set; }
+
+    }
+
+}

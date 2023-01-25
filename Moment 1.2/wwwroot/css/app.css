@@ -95,6 +95,20 @@ footer {
 
 }
 
+table th, table td {
+    padding: 1em;
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #31343a;
+    color: rgb(236, 236, 236);
+}
+
 @media (max-width: 500px) {
 
     header {

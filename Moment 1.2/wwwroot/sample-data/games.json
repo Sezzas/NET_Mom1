@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Grand Theft Auto V",
+        "genre": "Open World",
+        "platforms": "Playstation, Xbox, PC",
+        "price": 430 
+    },
+    {
+        "title": "Red Dead Redemption 2",
+        "genre": "Open World",
+        "platforms": "Playstation, Xbox, PC",
+        "price": 600
+    },
+    {
+        "title": "Stardew Valley",
+        "genre": "Indie",
+        "platforms": "Switch, Mobile, Playstation, Xbox, PC",
+        "price": 155
+    },
+    {
+        "title": "Stray",
+        "genre": "Adventure",
+        "platforms": "Playstation, PC",
+        "price": 312
+    }
+]

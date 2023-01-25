@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gypupqeZwJAtwiMc7OxH87lGVvFHxKKumjZjK3O+b3I=",
+  "Hash": "2NnxZL2HLE4W7ikJGKR39SR+WWEIJgEANDg9uvN9x3A=",
   "Source": "Moment 1.2",
   "BasePath": "/",
   "Mode": "Root",
@@ -6985,6 +6985,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\ebbah\\Dropbox\\WEBBUTVECKLING-PROGRAMMET\\Kod\\Webbutveckling med .NET\\NET_Mom1\\Moment 1.2\\wwwroot\\sample-data\\games.json",
+      "SourceId": "Moment 1.2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ebbah\\Dropbox\\WEBBUTVECKLING-PROGRAMMET\\Kod\\Webbutveckling med .NET\\NET_Mom1\\Moment 1.2\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "sample-data/games.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sample-data\\games.json"
     },
     {
       "Identity": "C:\\Users\\ebbah\\Dropbox\\WEBBUTVECKLING-PROGRAMMET\\Kod\\Webbutveckling med .NET\\NET_Mom1\\Moment 1.2\\wwwroot\\sample-data\\weather.json",
